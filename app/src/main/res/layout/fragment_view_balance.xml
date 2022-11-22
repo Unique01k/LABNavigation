@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".WalletBalanceFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".5">
+
+        <TextView
+            android:id="@+id/tv_buy_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wallet balance : $2025.00"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <View
+            android:id="@+id/view_separator"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_orange_dark"
+            app:layout_constraintLeft_toLeftOf="@+id/tv_buy_amount"
+            app:layout_constraintRight_toRightOf="@+id/tv_buy_amount"
+            app:layout_constraintTop_toBottomOf="@+id/tv_buy_amount" />
+
+        <TextView
+            android:id="@+id/tv_wallet_balance"
+            android:layout_width="229dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="15dp"
+            android:text="Last Transaction : + $1500.00"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="@id/view_separator"
+            app:layout_constraintTop_toBottomOf="@id/view_separator" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
